@@ -49,7 +49,7 @@ function drawRectangle(){
 function putName(){
 	var  canvasName = document.getElementById('canvas'); //Get canvas element
         var  contextName = canvasName.getContext('2d'); //Get 2d drawing context
-	context.font = '10px Arial'; //Set font style and size
+	context.font = '30px Arial'; //Set font style and size
 	context.fillStyle = 'black'; //Set fill color to preference
 	context.fillText('Nathalie', 5, 15); //Draw text at coordinates
 }
@@ -68,7 +68,7 @@ function clearCanvas(){
 }
 
 /* I created four different functions (drawRectangle, putName, loadImage, and clearCanvas) that will run 
-when prompted by the user. /*
+when prompted by the user. */
 
 </script>
 
@@ -106,7 +106,7 @@ when prompted by the user. /*
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 </div>
 
-<canvas id="canvas" width="700" height="500" style="border:1px solid #000000;"></canvas>
+<canvas id="canvas" width="400" height="200" style="border:1px solid #000000;"></canvas>
 
 <div id="content" class="w3-container">
 	<button class = "w3-button w3-black" onclick="drawRectangle()">Rectangle</button>
