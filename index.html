@@ -50,7 +50,7 @@ function putName(){
 	var  canvasName = document.getElementById('canvas'); //Get canvas element
         var  contextName = canvasName.getContext('2d'); //Get 2d drawing context
 	context.font = '10px Arial'; //Set font style and size
-	context.fillStyle = 'blue'; //Set fill color to preference
+	context.fillStyle = 'black'; //Set fill color to preference
 	context.fillText('Nathalie', 5, 15); //Draw text at coordinates
 }
 	
@@ -59,11 +59,11 @@ function loadImage(){
 	var contextImage = canvasImage.getContext('2d'); 
 	var lilies = new Image(); //Declares variable for image
 	lilies.src = "https://i.pinimg.com/564x/22/29/b4/2229b47175f0945c485073e9bb1a80ff.jpg"
-	contextImage.drawImage(lilies, 5, 25, 100, 75);}
+	contextImage.drawImage(lilies, 5, 20, 100, 75);}
 
 function clearCanvas(){
 	var canvasClear = document.getElementById('canvas');
-	var contextClear = canvas.getContext('2d');
+	var contextClear = canvasClear.getContext('2d');
 	context.clearRect(0, 0, canvas.width, canvas.height); //Clear everything on the canvas
 }
 
