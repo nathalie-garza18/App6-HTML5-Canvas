@@ -59,11 +59,11 @@ function loadImage(){
 	var contextImage = canvas.getContext('2d'); 
 	var lilies = new Image(); //Declares variable for image
 	lilies.src = "https://i.pinimg.com/564x/22/29/b4/2229b47175f0945c485073e9bb1a80ff.jpg"
-	loadImage.drawImage(lilies, 5, 25, 100, 75);}
+	contextImage.drawImage(lilies, 5, 25, 100, 75);}
 
 function clearCanvas(){
 	var canvasClear = document.getElementById('canvas');
-	var contextClear = canvas.getContext('2d");
+	var contextClear = canvas.getContext('2d');
 	context.clearRect(0, 0, canvas.width, canvas.height); //Clear everything on the canvas
 }
 
@@ -106,7 +106,7 @@ when prompted by the user. /*
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 </div>
 
-<canvas id="canvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+<canvas id="canvas" width="400" height="200" style="border:1px solid #000000;"></canvas>
 
 <div id="content" class="w3-container">
 	<button class = "w3-button w3-black" onclick="drawRectangle()">Rectangle</button>
