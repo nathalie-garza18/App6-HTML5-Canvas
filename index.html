@@ -17,10 +17,9 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of this code is to display a drawing canvas. By using buttons, the code will also be able to display the author's name, a rectangle, and a picture.
  
 Known Issues:
-blah, blah, blah, blah
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -43,7 +42,7 @@ function drawRectangle(){
 	var canvas = document.getElementById('canvas'); //Assigns canvas element to variable 'canvas' and retrieves it using ID attribute
 	var context = canvas.getContext('2d'); //Specifies 2D context and assigns obtained context to variable 'context.'
 	context.fillStyle = 'black'; //Using black as the color for the rectangle
-	context.fillRect(120,60,200,100); //Assigns values to top left coordinates, width, and height
+	context.fillRect(120,60,200,100); //Assigns values to rectangle coordinates, width, and height
 }
 	
 function putName(){
@@ -51,7 +50,7 @@ function putName(){
     var canvasName = document.getElementById('canvas'); //Get canvas element
     var contextName = canvasName.getContext('2d'); //Get 2d drawing context
     contextName.font = '10px Arial'; //Set font style and size
-    contextName.fillText("Nathalie", 5, 15);
+    contextName.fillText("Nathalie", 5, 15); //Sets coordinate for name to be displayed in the top left corner
 }
 	
 function loadImage(){
@@ -62,15 +61,16 @@ function loadImage(){
 	contextImage.drawImage(lilies, 5, 20, 100, 75);}
 
 function clearCanvas(){
-    console.log("Clearing canvas...");
+    console.log("Clearing canvas..."); //Console used to make sure clearCanvas function is running
     var canvasClear = document.getElementById('canvas');
     var contextClear = canvasClear.getContext('2d');
-    contextClear.clearRect(0, 0, canvasClear.width, canvasClear.height);
+    contextClear.clearRect(0, 0, canvasClear.width, canvasClear.height); //Clears content on canvas
 }
 
 
 /* I created four different functions (drawRectangle, putName, loadImage, and clearCanvas) that will run 
-when prompted by the user. */
+when prompted by the user. Each runs by retrieving the canvas element by its ID and adding different additions 
+using different methods such as changing the fill style, using fillText, drawImage, and clearRect */
 
 </script>
 
@@ -99,7 +99,7 @@ when prompted by the user. */
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>App6---HTML5-Canvas</h1>
 </div>
-	
+<!-- Header for App 6 -->	
 <div id="content" class="w3-container">
 	
 		
@@ -113,21 +113,24 @@ when prompted by the user. */
 <div id="content" class="w3-container">
 	<button class = "w3-button w3-black" onclick="drawRectangle()">Rectangle</button>
 </div>
+<!-- Sets conditions for canvas and also creates button to run drawRectangle function. -->
 	
 <div id="content" class="w3-container">
 	<button class = "w3-button w3-black" onclick = "putName()">Name</button>
 </div>
-
+<! -- Creates button for putName function so that it can run when prompted. -->
+	
 <div id="content" class="w3-container">
 	<button class = "w3-button w3-black" onclick = "loadImage()">Image</button>
 </div>
-
+<!-- Creates button for loadImage function so it can run when prompted. -->
+	
 <div id="content" class="w3-container">
 	<button class = "w3-button w3-black" onclick = "clearCanvas()">Clear</button>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
-</footer>
+</footer> <!-- Footer at the bottom of screen -->
 
 </body>
 </html>
