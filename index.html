@@ -47,11 +47,12 @@ function drawRectangle(){
 }
 	
 function putName(){
-	var  canvasName = document.getElementById('canvas'); //Get canvas element
-        var  contextName = canvasName.getContext('2d'); //Get 2d drawing context
-	context.font = '10px Arial'; //Set font style and size
-	context.fillStyle = 'blue'; //Set fill color to preference
-	context.fillText('Nathalie', canvas.width - 5, 15);
+    console.log("Putting name...");
+    var canvasName = document.getElementById('canvas'); //Get canvas element
+    var contextName = canvasName.getContext('2d'); //Get 2d drawing context
+    contextName.font = '10px Arial'; //Set font style and size
+    contextName.fillStyle = 'blue'; //Set fill color to preference
+    contextName.fillText('Nathalie', canvasName.width - 5, 15);
 }
 	
 function loadImage(){
