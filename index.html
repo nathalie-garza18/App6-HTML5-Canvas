@@ -62,9 +62,9 @@ function loadImage(){
 	contextImage.drawImage(lilies, 5, 20, 100, 75);}
 
 function clearCanvas(){
-	var canvasClear = document.getElementById('canvas');
-	var contextClear = canvasClear.getContext('2d');
-	context.clearRect(0, 0, canvasClear.width, canvasClear.height); //Clear everything on the canvas
+	var canvas = document.getElementById('canvas');
+	var context = canvasClear.getContext('2d');
+	context.clearRect(0, 0, canvas.width, canvas.height); //Clear everything on the canvas
 }
 
 /* I created four different functions (drawRectangle, putName, loadImage, and clearCanvas) that will run 
