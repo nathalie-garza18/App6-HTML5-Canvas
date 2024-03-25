@@ -61,12 +61,12 @@ function loadImage(){
 	lilies.src = "https://i.pinimg.com/564x/22/29/b4/2229b47175f0945c485073e9bb1a80ff.jpg"
 	contextImage.drawImage(lilies, 5, 20, 100, 75);}
 
-var canvas = document.getElementById('canvas');
-var context = canvas.getContext('2d');
-
-function clearCanvas() {
-	context.clearRect(0, 0, canvas.width, canvas.height);
-        }
+function clearCanvas(){
+    console.log("Clearing canvas...");
+    var canvasClear = document.getElementById('canvas');
+    var contextClear = canvasClear.getContext('2d');
+    contextClear.clearRect(0, 0, canvasClear.width, canvasClear.height);
+}
 
 
 /* I created four different functions (drawRectangle, putName, loadImage, and clearCanvas) that will run 
